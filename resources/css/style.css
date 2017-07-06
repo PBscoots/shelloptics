@@ -1,5 +1,8 @@
 html {
   font-size: 18px;
+}
+
+body {
   line-height: 1.4;
   font-family: Helvetica;
 }
@@ -32,12 +35,16 @@ header {
   align-items: center;
 }
 
+.left img {
+  height:1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
 .right {
   padding-right: 1rem;
 }
 
 .right nav ul {
-
   display: flex;
 }
 
@@ -50,8 +57,10 @@ header {
 }
 
 .slogan {
-  position: absolute;
-
+  position: relative;
+  text-align: right;
+  right: -2rem;
+  top: 10rem;
 }
 
 .slogan span {
@@ -64,20 +73,132 @@ header {
 .advantages {
   display: flex;
   justify-content: center;
-  height: 8rem;
-  padding: 3rem;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   width: 5rem;
+  height: 8rem;
   padding: 3rem;
-  height: auto;
 }
 
 .feature img {
 
+}
+
+#paper {
+  width: 3.5rem;
+  height: auto;
+}
+
+#truck, #ruler {
+  width: 5rem;
+  height: auto;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.spacer {
+  width: 5%;
+}
+
+.block {
+  width: 35%;
+}
+
+.block span {
+  display: block;
+  width: 10rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: cadetblue;
+  color: white;
+  background-size: cover;
+}
+
+footer {
+  background-color:azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width:auto;
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+  line-height: 50%;
+}
+
+@media only screen and (max-width:960px) {
+  .site-container {
+    width: 100%;
+  }
+
+  .background {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .slogan {
+    text-align: right;
+    right: 2rem;
+    top: 5rem;
+  }
+
+  .slogan span {
+    font-size: 1.33rem;
+    line-height: 1.2;
+    padding: 0.75rem 4rem;
+    background-color: white;
+  }
+
+}
+
+@media only screen and (max-width:630px) {
+  .background {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .slogan {
+    top: 9rem;
+  }
+
+  .slogan span {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 1rem;
+    background-color: white;
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem:
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  #phone {
+    display: flex;
+  }
+
+  #desktop-tablet {
+    display: none;
+  }
 }
